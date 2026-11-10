@@ -111,6 +111,8 @@ h1.disp{font-size:clamp(44px,7.4vw,124px)}
 .hero{position:relative;height:calc(100svh - var(--bar));min-height:540px;display:grid;place-items:center;color:#fff;overflow:hidden;background:var(--night)}
 .hero-ph{position:absolute;inset:0;overflow:hidden}
 .hero-img{width:100%;height:112%;object-fit:cover;object-position:50% 62%;will-change:transform}
+.hero-ph picture{display:contents}
+@media (max-width:899px){.hero-img{object-position:50% 50%}.hero-shade{background:linear-gradient(180deg,rgba(15,25,48,.62) 0%,rgba(15,25,48,.3) 24%,rgba(15,25,48,0) 40%,rgba(15,25,48,0) 62%,rgba(15,25,48,.72) 100%)!important}}
 .hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,25,48,.62) 0%,rgba(15,25,48,.34) 30%,rgba(15,25,48,.04) 56%,rgba(15,25,48,.5) 100%)}
 .hero-cover{position:absolute;inset:0;background:var(--paper);opacity:0;pointer-events:none}
 .hero-tx{position:relative;text-align:center;padding-inline:var(--gut);align-self:start;margin-top:clamp(56px,13vh,150px)}
@@ -317,3 +319,4 @@ h1.disp{font-size:clamp(44px,7.4vw,124px)}
 .f input[type=date]{text-align:left}
 .f input::-webkit-date-and-time-value{text-align:left}
 @media (max-width:379px){.word{display:none}}
+@media (max-width:899px){.hero-tx{align-self:stretch;margin-top:30px;display:flex;flex-direction:column}.hero-sub{margin-top:auto;margin-bottom:146px;max-width:320px}}
